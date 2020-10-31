@@ -1,0 +1,26 @@
+//pannello messaggi ricevuti
+.message-list {
+  .single-message {
+    div {
+      @include index_msg_stt;
+    }
+  }
+}
+
+.message-box {
+  ul {
+    list-style-type: none;
+    .message-obj {
+      font-style: italic;
+      font-weight: bold;
+    }
+    &.card {
+      cursor: pointer;
+    }
+  }
+
+  ul.sender-box {
+    padding: 7px;
+    padding-left: 10px;
+  }
+}

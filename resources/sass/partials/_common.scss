@@ -1,0 +1,58 @@
+// wrapper principale
+.site_wrapper {
+  position: relative;
+  max-width: 1760px !important;
+  min-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  .ms_navbar {
+    height: $nav_height;
+  }
+  main {
+    min-height: inherit;
+  }
+}
+
+#app .dropdown-menu {
+  background-color: #5a9093;// NB. Fatto per evitare che allo scroll della pagina le lettere in bianco non si vedano
+}
+
+// regole generali
+.fix-nav {
+  padding-top: 37px;
+}
+a {
+  text-decoration: none;
+  color: #232323;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+h1 {
+  font-size: $h1_size;
+  margin: 20px 0;
+}
+
+// Bottone per tornare alla pagina precedente
+a.get-back-button {
+  @include get_back_button;
+}
+
+a.get-back-button:hover {
+  @include get_back_button_hover;
+}
+
+// container
+.container-fluid {
+  padding: 0 80px;
+
+}
+@media screen and (max-width: 742px) {
+  .container-fluid {
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,47 @@
+// SPONSORSHIPS
+#sponsorships {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(to bottom, #66cad4, #7ad0cc, #90d5c6, #a6dac2, #badec1);
+  .box-apartment-sponsorship {
+    .apartment-sponsorship {
+      background-color: $color-primary;
+      position: relative;
+      padding-top: 20px;
+      box-shadow: -4px 14px 43px -10px rgba(0,0,0,0.75);
+      h3, p {
+        padding-left: 10px;
+      }
+      .logo-sponsorship {
+        width: 100px;
+        position: absolute;
+        bottom: -25px;
+        left: -25px;
+        transform:rotate(-30deg);
+
+      }
+      .info-sponsorship {
+        height: 120px;
+      }
+
+      .box-img {
+        img {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 994px) {
+  #sponsorships {
+    .box-apartment-sponsorship {
+        font-size: 12px;
+      .apartment-sponsorship {
+        .info-sponsorship {
+          height: 80px;
+        }
+      }
+    }
+  }
+}

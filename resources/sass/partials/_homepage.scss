@@ -1,0 +1,124 @@
+// main
+main {
+  .homepage{
+    @include jumbotron;
+    background-position: center;
+    background-size: cover;
+    margin-top: -25px; // NB. Per eliminare spazio Jumbo Top
+
+  }
+}
+nav {
+  max-width: 1760px !important;
+  margin: 0 auto;
+  width: 100%;
+  .ms_logo_white {
+    display: none;
+  }
+}
+
+// ricerca
+.search {
+  z-index: 99999999999;
+  .search-box {
+    position: relative;
+    display: flex;
+    input {
+      box-shadow: none;
+      position: absolute; // NB. Per eliminare spazio Jumbo Top
+      top: 25px; // NB. Per eliminare spazio Jumbo Top
+    }
+    .button {
+      color: $color-primary;
+      background-color: $color-secondary;
+      font-size: 15px;
+      border-radius: 3px;
+      border: 1px solid grey;
+      padding: 8px 12px;
+      box-shadow: -5px 0px 6px 0px rgba(0,0,0,0.4);
+    }
+  }
+}
+
+.ms_cta {
+  color: $color-primary;
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  h2 {
+    font-weight: bold;
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .search {
+      z-index: 1;
+  }
+  .ms_cta {
+    color: #000;
+    width: 100%;
+    text-align: center;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+// Online experience
+.container-experience {
+  color: $color-primary;
+  background-color: #000;
+  width: 100%;
+  padding: 30px 0;
+  .title-experience {
+    padding: 30px 0;
+  }
+  .button-experience {
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    a {
+      color: $color-primary;
+      text-decoration: none
+    }
+  }
+  .wrapper-experience {
+    margin: 0 -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-size: cover;
+    height: 95%;
+    .caption {
+      height: 60px;
+      background-color: hsl(210deg 3% 14%);
+      padding-top: 5px;
+      padding-left: 15px;
+      border-radius: 0px 0px 10px 10px;
+    }
+  }
+  .wrapper-experience.primary {
+    height: 98%;
+  }
+}
+
+.col-large {
+  height: 600px;
+}
+
+.col-small {
+  height: 300px;
+}
+
+.card-block {
+    min-height: 300px;
+}

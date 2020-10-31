@@ -1,0 +1,21 @@
+// dettaglio appartamenti
+//versione guest
+.guest-apartment {
+  @include show_apartment;
+}
+
+//versione admin
+.admin-apartment {
+  @include show_apartment;
+  
+  .buttons {
+    margin: 2px;
+  }
+  .delete-apartment {
+    text-align: right;
+  }
+
+  .chart-box {
+    margin: 0 auto;
+  }
+}

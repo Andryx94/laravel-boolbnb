@@ -1,0 +1,15 @@
+//modifica appartamento
+.edit-photo {
+  .old-img-box {
+    text-align: right;
+    border-right: 1px solid grey;
+    img {
+      max-height: 300px;
+    }
+  }
+
+  form .submit-button {
+    text-align: center;
+    margin: 15px 0;
+  }
+}

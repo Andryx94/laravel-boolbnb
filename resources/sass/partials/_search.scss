@@ -1,0 +1,25 @@
+// pagina ricerca appartamenti
+main {
+  .search{
+    @include jumbotron;
+    .jumbotron {
+      background-position-y: 73%;
+    }
+  }
+
+  .apartments-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 20px;    
+    .apartment {
+      width: 250px;
+      max-height: 800px;
+      padding-bottom: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

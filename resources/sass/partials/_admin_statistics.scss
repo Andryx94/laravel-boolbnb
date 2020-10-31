@@ -1,0 +1,37 @@
+//pannello statistiche
+.statistics-list {
+  .statistics-box {
+    div {
+      @include index_msg_stt;
+    }
+  }
+}
+
+.apart-info {
+  margin-top: 20px;
+
+  h5 {
+    margin-top: 30px;
+  }
+}
+
+.wrapper-statistics {
+  font-size: 25px;
+  .content-statistics {
+    background: $color-secondary;
+    color: $color-primary;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .img-statistics {
+    position: absolute;
+    transform:rotate(-28deg);
+  }
+  .box-statistics {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: $color-primary;
+    margin: 30px 0;
+
+  }
+}
